@@ -427,7 +427,7 @@ if __name__ == '__main__':
     
     #Loading required edits	
     edits = {}
-    with io.open('%s/DATA/EDITS.txt' %file_path, encoding='utf-8') as fp:
+    with io.open('%s/DATA/EDITS' %file_path, encoding='utf-8') as fp:
         for line in fp:
             line = line.strip().split('\t')
             tid, eds = line[0], line[1:]
