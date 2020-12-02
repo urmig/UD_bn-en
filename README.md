@@ -3,23 +3,29 @@
 
 This program crawls Bengali-English tweets and provides for Language, POS, Dependency tags for the normalised text in accordance with the Universal Dependencies.
 
-	Install [Tweepy](https://github.com/tweepy/tweepy)
-
-	Get your Twitter app keys from https://apps.twitter.com/ and put the keys in the ``crawl_tweets.py`` script.
+Install [Tweepy](https://github.com/tweepy/tweepy) 
+```bash
+pip install tweepy
+```
+Get your Twitter app keys from https://apps.twitter.com/ and put the keys in the ``crawl_tweets.py`` script. 
 
 
 # Crawl Tweets
-
-	python crawl_tweets.py --t DATA/<dev/test/train>_twids.txt  --a DATA/<dev/test/train>_annot.json --o <dev/test/train>_output.conllu# Requirements
+```python
+python crawl_tweets.py --t DATA/<dev/test/train>_twids.txt  --a DATA/<dev/test/train>_annot.json --o <dev/test/train>_output.conllu
+```
 
 
 # Acknowledgments
 
-Any publication reporting the work done using this data should cite the following papers:
+Any publication using this data should cite the following paper:
 
-	Ghosh, Urmi, Dipti Misra Sharma, and Simran Khanuja. "Dependency Parser for Bengali-English Code-Mixed Data enhanced with a Synthetic Treebank." Proceedings of the 18th International Workshop on Treebanks and Linguistic Theories (TLT, SyntaxFest 2019). 2019.
 
-@inproceedings{ghosh-etal-2019-dependency,
+Ghosh, Urmi, Dipti Misra Sharma, and Simran Khanuja. "Dependency Parser for Bengali-English Code-Mixed Data enhanced with a Synthetic Treebank." Proceedings of the 18th International Workshop on Treebanks and Linguistic Theories (TLT, SyntaxFest 2019). 2019. </mark>
+
+
+```
+    @inproceedings{ghosh-etal-2019-dependency,
     title = "Dependency Parser for {B}engali-{E}nglish Code-Mixed Data enhanced with a Synthetic Treebank",
     author = "Ghosh, Urmi  and
       Sharma, Dipti  and
@@ -33,3 +39,4 @@ Any publication reporting the work done using this data should cite the followin
     doi = "10.18653/v1/W19-7810",
     pages = "91--99",
 }
+```
